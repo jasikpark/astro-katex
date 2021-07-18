@@ -1,0 +1,11 @@
+---
+import katex from "katex";
+interface Props {
+    latex: string,
+    displayMode?: boolean,
+    strict?: boolean
+};
+const { latex, displayMode = false, strict = false } = Astro.props as Props;
+const html = katex.render(latex, { throwOnError: false, displayMode, strict });
+---
+{html}
