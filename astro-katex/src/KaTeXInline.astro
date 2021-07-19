@@ -1,0 +1,13 @@
+---
+import KaTeX from "./KaTeX.astro";
+
+export interface Props {
+    tex: string, // A Tex Expression
+    $scope,
+    opts: KaTeXOptions, // KaTeX Options
+};
+
+const { tex, $scope, opts = {} } = Astro.props;
+opts.displayMode = false;
+---
+<KaTeX {tex} {$scope} {opts} />
