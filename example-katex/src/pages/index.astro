@@ -48,10 +48,7 @@ let title = 'My Astro Site';
         <KaTeX tex="y = mx + b"/>
 
         <h3>passed as a child</h3>
-        <Prism lang="astro" code={`
-        <!-- Doesn't work atm :( -->
-        <KaTeX>y = mx + b</KaTeX> 
-        `}/>
+        <Prism lang="astro" code={`<KaTeX>y = mx + b</KaTeX>`}/>
         <KaTeX>y = mx + b</KaTeX>
         <h2>KaTeXInline</h2>
         <Prism lang="astro" code={`
@@ -59,6 +56,12 @@ let title = 'My Astro Site';
         `}/>
         <p>
         Einstein came up with <KaTeXInline tex="E= mc^2"/>.
+        </p>
+        <Prism lang="astro" code={`
+        Einstein came up with <KaTeXInline>E= mc^2</KaTeXInline>.
+        `}/>
+        <p>
+        Einstein came up with <KaTeXInline>E= mc^2</KaTeXInline>.
         </p>
         <h2>$</h2>
         <Prism lang="astro" code={`
@@ -71,6 +74,12 @@ let title = 'My Astro Site';
         `}/>
         <p>
         Einstein came up with: <KaTeXBlock tex="E= mc^2"/>
+        </p>
+        <Prism lang="astro" code={`
+        Einstein came up with: <KaTeXBlock>E= mc^2</KaTeXBlock>
+        `}/>
+        <p>
+        Einstein came up with: <KaTeXBlock>E= mc^2</KaTeXBlock>
         </p>
         <h2>$$</h2>
         <Prism lang="astro" code={`

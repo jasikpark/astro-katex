@@ -1,18 +1,15 @@
 ---
-import katex from "katex";
-import styles from "katex/dist/katex.css";
-// import type { KaTeXOptions } from "katex";
+import katex, { KaTeXOptions } from "katex";
+console.log(KaTeXOptions);
 export interface Props {
     tex: string, // A Tex Expression
-    $scope,
     opts: KaTeXOptions, // KaTeX Options
 };
-console.log(Astro.props);
-const { tex = "", $scope, opts = {} } = Astro.props as Props;
+const { tex = children.toString(), opts = {} } = Astro.props as Props;
 const html: string = katex.renderToString(tex, opts);
 ---
-<!--<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.13.11/dist/katex.min.css" integrity="sha384-Um5gpz1odJg5Z4HAmzPtgZKdTBHZdw8S29IecapCSB31ligYPhHQZMIlWLYQGVoc" crossorigin="anonymous">-->
-<style lang="scss">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.13.11/dist/katex.min.css" integrity="sha384-Um5gpz1odJg5Z4HAmzPtgZKdTBHZdw8S29IecapCSB31ligYPhHQZMIlWLYQGVoc" crossorigin="anonymous">
+<!--<style lang="scss">
 @use "../../node_modules/katex/dist/katex.css";
-</style>
+</style>-->
 {html ? html : tex}
