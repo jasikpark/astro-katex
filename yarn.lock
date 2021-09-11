@@ -1292,10 +1292,10 @@ astring@^1.7.4:
   resolved "https://registry.yarnpkg.com/astring/-/astring-1.7.5.tgz#a7d47fceaf32b052d33a3d07c511efeec67447ca"
   integrity sha512-lobf6RWXb8c4uZ7Mdq0U12efYmpD1UFnyOWVJPTa3ukqZrMopav+2hdNu0hgBF0JIBFK9QgrBDfwYvh3DFJDAA==
 
-astro@0.20.3:
-  version "0.20.3"
-  resolved "https://registry.yarnpkg.com/astro/-/astro-0.20.3.tgz#b8f75cd0ca98dd0af98a696f31ef6b7dcaefc7bd"
-  integrity sha512-PQBWylMIk7GyphtBTLpXnfrk5kJ7JHlXLdrlxqpt0O/0y/U+ATUu4WjuYDCuOBef7EKr63xni+ieZqJLP5qbnw==
+astro@0.20.4:
+  version "0.20.4"
+  resolved "https://registry.yarnpkg.com/astro/-/astro-0.20.4.tgz#15d4612367b5aea3702d982cb373ac3a44a7992a"
+  integrity sha512-X3NWn9jWCxx3QSABQuZmeCAYNNaR2LSgCd69SxsaODqa2+kdaB9eISGHBnrHvrF6XKApm4oSPOMVhJawyMh+7Q==
   dependencies:
     "@astrojs/markdown-support" "0.3.0"
     "@astrojs/parser" "0.20.2"
@@ -4895,10 +4895,10 @@ prettier-plugin-package@1.3.0:
   resolved "https://registry.yarnpkg.com/prettier-plugin-package/-/prettier-plugin-package-1.3.0.tgz#b42d12eda16b67c9fcf95054d799fe3f542aef54"
   integrity sha512-KPNHR/Jm2zTevBp1SnjzMnooO1BOQW2bixVbOp8flOJoW+dxdDwEncObfsKZdkjwrv6AIH4oWqm5EO/etDmK9Q==
 
-prettier@2.3.2:
-  version "2.3.2"
-  resolved "https://registry.yarnpkg.com/prettier/-/prettier-2.3.2.tgz#ef280a05ec253712e486233db5c6f23441e7342d"
-  integrity sha512-lnJzDfJ66zkMy58OL5/NY5zp70S7Nz6KqcKkXYzn2tMVrNxvbqaBpg7H3qHaLxCJ5lNMsGuM8+ohS7cZrthdLQ==
+prettier@2.4.0:
+  version "2.4.0"
+  resolved "https://registry.yarnpkg.com/prettier/-/prettier-2.4.0.tgz#85bdfe0f70c3e777cf13a4ffff39713ca6f64cba"
+  integrity sha512-DsEPLY1dE5HF3BxCRBmD4uYZ+5DCbvatnolqTqcxEgKVZnL2kUfyu7b8pPQ5+hTBkdhU9SLUmK0/pHb07RE4WQ==
 
 prettier@^1.19.1:
   version "1.19.1"
